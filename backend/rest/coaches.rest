@@ -1,0 +1,17 @@
+@BASE_URL=http://localhost:5000/coaches
+
+### Find all coaches
+GET {{BASE_URL}}
+
+### Register coach
+POST {{BASE_URL}}
+Content-Type: application/json
+
+{
+    "id": "c2",
+    "firstName": "Naruto",
+    "lastName": "Chen",
+    "areas": "backend,career",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quam!",
+    "hourRate": 30
+}

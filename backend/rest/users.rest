@@ -1,0 +1,24 @@
+@BASE_URL=http://localhost:5000/users
+
+### Register
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+    "email": "babb@qq.com",
+    "password": "p@ssw0rd"
+}
+
+### Login
+# @name login
+POST {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+    "email": "babb@qq.com",
+    "password": "p@ssw0rd"
+}
+
+###
+GET {{BASE_URL}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6ImJhYmIiLCJpYXQiOjE2NjkwMDIyNTksImV4cCI6MTY2OTA4ODY1OX0.lA0DXdmlaRfChYUzSC3ofIDzlH8tKE0A_HEDN3ZErvo

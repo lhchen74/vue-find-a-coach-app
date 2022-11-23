@@ -1,0 +1,14 @@
+@BASE_URL=http://localhost:5000/requests
+
+### Find requests by coachId
+GET {{BASE_URL}}/c3
+
+### Contact coach request
+POST {{BASE_URL}}
+Content-Type: application/json
+
+{
+    "userEmail": "test@abc.com",
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quam!",
+    "coachId": "c3"
+}
